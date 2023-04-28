@@ -1,6 +1,13 @@
 #include <iostream>
 #include <fstream> // библ для работы с файловой системой
 #include <string>
+
+
+bool clear_file(std::string file_path) {
+	std::ofstream clear
+		clear.open
+}
+
 int main() {
 	setlocale(LC_ALL, "Russian");
 	//int n;
@@ -36,7 +43,7 @@ int main() {
 		while (in.get(sym)
 		{
 		 std::cout<<sym; //только вывод
-			file_text += sym; //вывод и сохранение 
+			file_text += sym; //вывод и сохранение
 		}
 		std::cout << file_text << std::endl;
 
@@ -51,29 +58,37 @@ int main() {
 		std::cout << file_text << std::endl;*/
 
 		// построчное считывание
-		std::string line;
-		while (std::getline(in,line))
-		{
-			file_text += line+'\n';
-		}
-		std::cout << file_text << std::endl;
-
-
-
+	/*std::string line;
+	while (std::getline(in, line))
+	{
+		file_text += line + '\n';
 	}
-	else
-		std::cout << "ошибка \n";
-	
+	std::cout << file_text << std::endl;
+}*/
+
+//
+//	
+//	else
+//		std::cout << "ошибка \n";
+//*/
+//
+//
+//	in.close();
+//
+//
+//	// удаление файла
+//	/*if (remove(path.c_str()) == 0)
+//	    std::cout << " Файл \"" << path << "\"удалён.\n";
+//	else
+//		std::cout << " ошибка уд-я файла. \n";*/
 
 
-	in.close();
-*/
 
-	// удаление файла
-	/*if (remove(path.c_str()) == 0)
-	    std::cout << " Файл \"" << path << "\"удалён.\n";
-	else
-		std::cout << " ошибка уд-я файла. \n";*/
+
+
+
+
+
 
 
 	return 0;
